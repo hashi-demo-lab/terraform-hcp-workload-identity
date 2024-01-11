@@ -1,4 +1,4 @@
-# hcp-workload-identity
+# terraform-hcp-workload-identity
 
 A Terraform module that uses the [HCP Provider for Terraform](https://registry.terraform.io/providers/hashicorp/hcp/latest/docs) to configure workload identity (OIDC auth) in HashiCorp Cloud Platform. With
 this, you can configure OIDC authentication with Terraform Cloud or any other workload identity
