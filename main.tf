@@ -18,7 +18,7 @@ resource "hcp_project_iam_binding" "this" {
 
 # Add a workload IDP for your service (e.g. Terraform Cloud) to use the created service principal
 resource "hcp_iam_workload_identity_provider" "idp" {
-  name = "my-workload-identity-provider"
+  name = "tfstacks-workload-identity-provider"
   service_principal = hcp_service_principal.tfc.resource_name
   # This is broken in the HCP provider. Spaces aren't allowed!
   description       = "Allow-TFC-to-act-as-sp-for-tfc-service-principal"
